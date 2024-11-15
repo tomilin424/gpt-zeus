@@ -4,7 +4,7 @@ import requests
 
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
-WEBAPP_URL = "https://gpt-zeus.vercel.app"
+WEBAPP_URL = "https://gpt-zeus-5tna3zfrd-vyacheslavs-projects-068c7a87.vercel.app"
 
 def setup_menu():
     # Используем правильный метод API

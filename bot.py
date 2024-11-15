@@ -14,7 +14,7 @@ TOKEN = os.getenv('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 # Обновляем URL на актуальный
-WEBAPP_URL = "https://gpt-zeus.vercel.app"
+WEBAPP_URL = "https://gpt-zeus-5tna3zfrd-vyacheslavs-projects-068c7a87.vercel.app"
 
 def delete_webhook():
     url = f"https://api.telegram.org/bot{TOKEN}/deleteWebhook"

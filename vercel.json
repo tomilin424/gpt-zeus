@@ -9,7 +9,7 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://gpt-zeus.vercel.app"
+    "NEXT_PUBLIC_API_URL": "https://gpt-zeus-5tna3zfrd-vyacheslavs-projects-068c7a87.vercel.app"
   },
   "headers": [
     {
