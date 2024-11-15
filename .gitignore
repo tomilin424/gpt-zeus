@@ -1,5 +1,6 @@
 # Dependencies
-/node_modules
+node_modules/
+/webapp/node_modules/
 /.pnp
 .pnp.js
 
@@ -8,10 +9,12 @@
 
 # Next.js
 /.next/
+/webapp/.next/
 /out/
 
 # Production
 /build
+/webapp/build/
 
 # Misc
 .DS_Store
@@ -42,4 +45,7 @@ venv/
 # IDE
 .idea/
 .vscode/
+
+# Vercel
+.vercel
 
