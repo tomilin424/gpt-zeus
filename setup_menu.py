@@ -4,11 +4,11 @@ import requests
 
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
-WEBAPP_URL = "https://neurs-ai-webapp-mzqyhemhs-vyacheslavs-projects-068c7a87.vercel.app"
+WEBAPP_URL = "https://gpt-zeus.vercel.app"
 
 def setup_menu():
-    # Настраиваем меню бота
-    url = f"https://api.telegram.org/bot{TOKEN}/setMenuButton"
+    # Используем правильный метод API
+    url = f"https://api.telegram.org/bot{TOKEN}/setChatMenuButton"
     
     data = {
         "menu_button": {
@@ -18,7 +18,12 @@ def setup_menu():
         }
     }
     
-    response = requests.post(url, json=data)
+    # Добавляем headers
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    
+    response = requests.post(url, json=data, headers=headers)
     
     if response.status_code == 200:
         print("Меню бота успешно настроено!")
@@ -26,6 +31,7 @@ def setup_menu():
     else:
         print("Ошибка при настройке меню:")
         print(response.text)
+        print(f"Статус код: {response.status_code}")
 
 if __name__ == "__main__":
     setup_menu() 
