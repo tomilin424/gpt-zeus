@@ -39,3 +39,7 @@ venv/
 .github/workflows/
 .github/
 
+# IDE
+.idea/
+.vscode/
+
